@@ -1,7 +1,7 @@
 proxies:
 - cipher: rc4-md5
   client-fingerprint: chrome
-  name: 10|🇺🇸 美国2|@ripaojiedian
+  name: 12|🇺🇸 美国2|@ripaojiedian
   password: efanccyun
   plugin: obfs
   plugin-opts:
@@ -12,7 +12,8 @@ proxies:
   tfo: false
   type: ss
 - client-fingerprint: chrome
-  name: 10|🇺🇸 美国3|@ripaojiedian
+  name: 12,13|美国3|@ripaojiedian
+  network: tcp
   password: 253bc477d4e43c209f2d427272968280
   port: 1700
   server: 153.121.45.139
@@ -20,10 +21,71 @@ proxies:
   sni: www.nintendogames.net
   type: trojan
 - client-fingerprint: chrome
-  name: 10|🇺🇸 美国4|@ripaojiedian
+  name: 12,13|美国4|@ripaojiedian
+  network: tcp
   password: 253bc477d4e43c209f2d427272968280
   port: 3294
   server: 160.16.72.33
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
+- client-fingerprint: qq
+  flow: xtls-rprx-vision
+  name: 14|US_speednode_0023
+  port: 34074
+  reality-opts:
+    public-key: zimSAAs4SyUKAR-MTMaw08PuI7skyi1U5Peb6VGJwjY
+    short-id: 061cca24
+  server: 500770.xyz
+  servername: www.ucla.edu
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 9d0a75d2-f747-4afa-b43f-d208af9e8f9a
+- http-opts:
+    headers:
+      Host:
+      - varzesh3.ir
+    method: GET
+    path:
+    - /
+  name: 14|US_speednode_0025
+  network: http
+  port: 33801
+  server: m24a.vip784.com
+  servername: varzesh3.ir
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: d36f457f-17a9-4891-a113-322ec6792917
+- client-fingerprint: safari
+  flow: xtls-rprx-vision
+  name: 14|US_speednode_0033
+  port: 443
+  reality-opts:
+    public-key: Xd2u-uX0dhiJrB_ESaDSoQBmT6Jv1tEmqn3inOiYFDg
+    short-id: 207a3de5
+  server: 146.235.193.81
+  servername: iosapps.itunes.apple.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 747c62da-109f-4add-8e67-c66e1af7d255
+- client-fingerprint: chrome
+  name: 14|US_speednode_0036
+  network: ws
+  port: 28034
+  server: 142.171.85.230
+  servername: kejiland.freewarp.eu.org
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
+  ws-opts:
+    headers:
+      Host: kejiland.freewarp.eu.org
+    path: /snippets/ip=proxyip.fxxk.dedyn.io:443
